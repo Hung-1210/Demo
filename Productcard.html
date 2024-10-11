@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Hienthisp.css">
+    <title>Document</title>
+    <style>
+        .field-group
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            margin: 0;
+        }
+        .topnav {
+  overflow: hidden;
+  background-color: #48D1CC;
+}
+      
+        img { 
+    display: inline-block;
+}
+        .topnav a {
+            float: left;
+            text-align: center;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 35px 30px;
+            font-size:16px;
+            border: none;
+            text-decoration: none;  
+        }
+        .topnav a:hover {
+  background-color: #66CDAA;
+  color: black;
+}
+span.thuonghieu {
+float: left;
+text-align: center;
+color: black;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 45px;
+padding: 16px 24px;
+border: none;
+text-decoration: none;  
+}
+span.timkiem {
+float: left;
+text-align: center;
+color: black;
+font-family: Arial, Helvetica, sans-serif;
+padding: 35px 30px;
+font-size:16px;
+border: none;
+text-decoration: none;  
+}
+.topnav  div input{
+     width: 30%;
+     height: 40px; 
+     margin:35px 30px; 
+     float: left; 
+     position: relative; 
+     border-radius: 5px; 
+     border: none; 
+}
+.shopping {
+  background: red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: absolute;
+  right: 8.5%;
+  top: 3.5%;
+  margin: 0;
+  padding: 3px 10px;
+  font-size: 12px;
+}
+.main {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 2%;
+    position: relative;
+}
+.product-name {
+margin : 1%;
+}
+.image {
+  display:flex;
+  margin-top: 7%;
+  position: absolute;
+  float: left;
+  height: 70vh;
+  width: 45%;
+}
+.container {
+    position: relative;
+    left: 55%;
+    width: 45%
+}
+.price{
+    background-color: lightgray;
+}
+.price0 {
+  font-size: 150%;
+  margin-left: 1%;
+  margin-top: 0;
+  color: red;
+  padding-top: -2%;
+}
+.price1 {
+  font-size: 125%;
+  text-decoration: line-through;
+  opacity: 0.5;
+  float: right;
+  padding-right: 5%;
+}
+.content {
+    display: block;
+    border: 1px solid gray;
+    height: 65vh;
+    overflow-y: auto;
+    border-radius: 15px;
+    padding: 0;
+    background-color: gray;
+}
+table {
+  display: table;
+  width: 100%;
+  background-color: white;
+  border: 0.5px solid lightgray;
+  border-collapse: collapse;
+  
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+td {
+    width: 50%;
+    padding: 2%;
+    font-size: 110%;
+} 
+ .addcart {
+    background-color: darkcyan;
+    font-size: 125%;
+    height: 10%;
+    text-align: center;
+    color: white;
+    padding: 2%;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 3%;
+    
+}
+.sup {
+    float: right;
+}
+.cart {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color:#7FFFD4;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.cart a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: gray;
+  display: block;
+  transition: 0.3s;
+}
+
+.cart a:hover {
+  color: black;
+}
+
+.cart .closebtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 500px) {
+  .cart {padding-top: 15px;}
+  .cart a {font-size: 18px;}
+}
+</style>
+<script src="data.js"></script>
+     <!-- <script>
+         const urlParams = new URLSearchParams(window.location.search);
+         const id_sanpham = urlParams.get('sanpham'); 
+     </script> -->
+</head>
+<body>
+    <div id="mycart" class="cart">
+        <a href="#" class="closebtn" onclick="closecart()">&times;</a>
+      </div>
+    <div style="padding-right: 5%; padding-left: 5%;" class="topnav">
+        <span class="thuonghieu"><i class="fa fa-mobile" aria-hidden="true" style="font-size:60px; padding: right 20px;"></i>&ensp;PHONE WORLD</span>
+        <div class="field-group"><form action="tim_kiem" onsubmit="">
+        <input  id="search" type="text" class=" " onkeyup=" " placeholder="Bạn cần tìm điện thoại gì.....?"  name="key" autocomplete="off" maxlength="100">
+        </form>
+        </div>
+        <a style="padding: 50px 30px;" href="">LỌC SẢN PHẨM &nbsp;<i class="fa fa-sort-desc" aria-hidden="true" style="font-size:20px;"></i></a>
+        <a href="#"><i class="fa fa-user" style="font-size: 20px;" aria-hidden="true"></i><br></i>ĐĂNG NHẬP</a>
+        <a href="#" onclick="opencart()"><i class="fa fa-shopping-cart" style="font-size: 20px;" aria-hidden="true"></i><span class="shopping">0</span><br>GIỎ HÀNG</a>
+        </div>
+     <div class="main">
+     <div class="product-name">
+    <h1 id="product-name"></h1>
+    <hr width="100%" size="2px" color="lightgray"/>
+     </div>
+    <div class="image" id="myimg">
+       
+    </div>
+           
+    <div class="container">
+    <div class="price">
+    <h2>
+    <span class="price0" id="price0">
+    </span>
+    <span class="price1" id="price1">
+    </span>
+    </h2> 
+    </div>
+    <div class="content"> 
+        <h2 style="text-align: center; margin: 1.8%; background-color: gray; ">Thông số kỹ thuật</h2>
+        <table>
+            <tbody>
+            <tr>
+            <td>Kích thước màn hình</td>
+            <td id="td1"></td>
+            </tr>
+            <tr>
+            <td>Độ phân giải màn hình</td>
+            <td id="td2"></td>
+            </tr>
+            <tr>
+            <td>Hệ điều hành</td>
+            <td id="td3"></td>
+            </tr>
+            <tr>
+            <td>Công nghệ màn hình</td>
+            <td id="td4"></td>
+            </tr>    
+            <tr>
+              <td>Dung lượng RAM</td>
+              <td id="td5"></td>
+              </tr>
+              <tr>
+              <td>Bộ nhớ trong</td>
+              <td id="td6"></td>
+              </tr>   
+            <tr>
+            <td>Camera trước</td>
+            <td id="td7"></td>
+            </tr>      
+            <tr>
+            <td>Camera sau</td>
+            <td id="td8"></td>
+            </tr>  
+            <tr>
+            <td>Thẻ SIM</td>
+            <td id="td9"></td>
+            </tr>
+            <tr>
+            <td>Tính năng màn hình</td>
+            <td id="td10"></td>
+            </tr>       
+            <tr>
+            <td>Pin</td>
+            <td id="td11"></td>
+            </tr>
+            <tr>
+            <td>Chipset</td>
+            <td id="td12"></td>
+            </tr>                 
+            </tbody>
+            </table>
+        </div>
+        <div class="addcart" onclick="">
+        <h2 style="margin: 0;">Thêm vào giỏ hàng &nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></h2>
+        </div>
+    </div>
+     </div>
+        <script>
+        // var mybody = document.getElementsByTagName("myimg")[0];
+        const urlParams = new URLSearchParams(window.location.search);
+        const id_sanpham = urlParams.get('sanpham'); 
+        var price0 = document.getElementById("price0");
+        price0.innerHTML += price_0[id_sanpham];
+        var price1 = document.getElementById("price1");
+        price1.innerHTML += price_1[id_sanpham];
+        var productname = document.getElementById("product-name");
+        productname.innerHTML += product_name[id_sanpham];
+        var myImg = document.getElementById("myimg");
+        myImg.innerHTML += '<img src="'+link_img[id_sanpham]+'">';
+        var td1 = document.getElementById("td1");
+        td1.innerHTML += td1table[id_sanpham];
+        var td2 = document.getElementById("td2");
+        td2.innerHTML += td2table[id_sanpham];
+        var td3 = document.getElementById("td3");
+        td3.innerHTML += td3table[id_sanpham];
+        var td4 = document.getElementById("td4");
+        td4.innerHTML += td4table[id_sanpham];
+        var td5 = document.getElementById("td5");
+        td5.innerHTML += td5table[id_sanpham];
+        var td6 = document.getElementById("td6");
+        td6.innerHTML += td6table[id_sanpham];
+        var td7 = document.getElementById("td7");
+        td7.innerHTML += td7table[id_sanpham];
+        var td8 = document.getElementById("td8");
+        td8.innerHTML += td8table[id_sanpham];
+        var td9 = document.getElementById("td9");
+        td9.innerHTML += td9table[id_sanpham];
+        var td10 = document.getElementById("td10");
+        td10.innerHTML += td10table[id_sanpham];
+        var td11 = document.getElementById("td11");
+        td11.innerHTML += td11table[id_sanpham];
+        var td12 = document.getElementById("td12");
+        td12.innerHTML += td12table[id_sanpham];  
+        function opencart() {
+    document.getElementById("mycart").style.width = "560px";
+  }
+  
+  function closecart() {
+    document.getElementById("mycart").style.width = "0";
+  }
+
+            // mybody.innerHTML += sp_name[id_sanpham];   
+        </script>
+</body>
+</html>

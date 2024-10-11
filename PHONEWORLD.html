@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="PHONEWORLD.css">
+    
+    <title>Document</title>
+</head>
+
+<body>
+  <script>console.log(document.querySelector('.listPage'))</script>
+    <div style="padding-right: 5%; padding-left: 5%;" class="topnav">
+        <span class="thuonghieu"><i class="fa fa-mobile" aria-hidden="true" style="font-size:60px; padding: right 20px;" href=""></i>&ensp;PHONE WORLD</span>
+        <div class="field-group"><form action="tim_kiem" onsubmit="">
+        <input  id="search" type="text" class=" " onkeyup=" " placeholder="Bạn cần tìm điện thoại gì.....?"  name="key" autocomplete="off" maxlength="100">
+        </form>
+        </div>
+        <a style="padding: 55px 30px;" href="#">LỌC SẢN PHẨM &nbsp;<i class="fa fa-sort-desc" aria-hidden="true" style="font-size:20px;"></i></a>
+        <a href="#"><i class="fa fa-user" style="font-size: 20px;" aria-hidden="true"></i><br></i>ĐĂNG NHẬP</a>
+        <a href="#" onclick="opencart()"><i class="fa fa-shopping-cart" style="font-size: 20px;" aria-hidden="true"></i><span class="shopping">0</span><br>GIỎ HÀNG</a>
+        </div>  
+        <div id="slide">
+            <img src="http://andylongstore.com/storage/banner.jpg" id="hinh">
+            <div class="dieuhuong">
+                <i class="fa fa-chevron-circle-left" onclick="prev()"></i>
+                <i class="fa fa-chevron-circle-right" onclick="next()"></i>
+            </div> 
+        </div> 
+        <h1 style="text-align: center;">Danh mục sản phẩm</h1>
+        <div>
+        <div  style="padding-left: 15%;" class="td" >
+        <img src="https://cdn.glitch.global/600cd953-4993-4e85-afde-a681ac556632/apple?v=1682938266389"\>
+        </div>
+        <div style="margin-top: 12px;" class="td">
+        <img src="https://cdn.glitch.global/600cd953-4993-4e85-afde-a681ac556632/samsung?v=1682937487465"\>
+        </div>
+        <div style="margin-top: 12px;" class="td">
+        <img src="https://cdn.glitch.global/600cd953-4993-4e85-afde-a681ac556632/xiaomi?v=1682938501193"\>
+        </div>
+        <div style="margin-top: 10px;" class="td">
+        <img src="https://cdn.glitch.global/600cd953-4993-4e85-afde-a681ac556632/oppo?v=1682938530044"\>
+        </div>
+        <div style="margin-top: 5px;"class="td">
+        <img src="https://cdn.glitch.global/600cd953-4993-4e85-afde-a681ac556632/realme?v=1682938788139"\>
+        </div>
+        <div style="margin-top: 3px;"class="td">
+        <img src="https://cdn.glitch.global/600cd953-4993-4e85-afde-a681ac556632/vivo?v=1682939037001"\>
+        </div>
+        <div  style="margin-top: 12px; padding-right: 15%;" class="td">
+        <img src="https://cdn.glitch.global/600cd953-4993-4e85-afde-a681ac556632/nokia?v=1682938849746"\>
+        </div>
+        </div>  
+    
+         <div class="product-grid">
+          <a href="Productcard.html?sanpham=1">
+            <div class="item">
+                  <img src="https://cdn.tgdd.vn/Products/Images/42/251192/iphone-14-pro-max-den-thumb-600x600.jpg" alt="Product 1">
+                  <h3>Iphone 14 pro max 6GB 128GB</h3>
+                  <span class="gia">24.500.000<sup>đ</sup></span><span class="giaphu">27.500.000<sup>đ</sup></span>
+                  <button class="addcart">Thêm vào giỏ hàng &nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div> 
+              </a>
+                <a href="Productcard.html?sanpham=2">
+                  <div class="item">
+                  <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/s/a/samsung-galaxy-a14_1_.jpg" alt="Product 2">
+                  <h3>Samsung Galaxy A14 5G</h3>
+                  <span class="gia">4.400.000<sup>đ</sup></span><span class="giaphu">4.900.000<sup>đ</sup></span>
+                  <button class="addcart">Thêm vào giỏ hàng &nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div>
+              </a>
+                <a href="Productcard.html?sanpham=3"><div class="item">
+                  <img src="https://cdn2.cellphones.com.vn/x358,webp,q100/media/catalog/product/s/2/s23-ultra-xanh.png" alt="Product 3">
+                  <h3>Samsung Galaxy S23 Ultra 256GB</h3>
+                  <span class="gia">24.490.000<sup>đ</sup></span><span class="giaphu">26.990.000<sup>đ</sup></span>
+                  <button class="addcart">Thêm vào giỏ hàng &nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div></a>
+                <a href="Productcard.html?sanpham=4"><div class="item">
+                  <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/o/p/oppo-reno8t-vang1-thumb-600x600.jpg" alt="Product 4">
+                  <h3>OPPO Reno8 T 5G (8GB - 128GB)</h3>
+                  <span class="gia">8.690.000<sup>đ</sup></span><span class="giaphu">9.690.000<sup>đ</sup></span>
+                  <button class="addcart">Thêm vào giỏ hàng &nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div></a>
+                <a href="Productcard.html?sanpham=5"><div class="item">
+                  <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/x/i/xiaomi-12t-den_1.jpg" alt="Product 5">
+                  <h3>Xiaomi 12T 8GB 128GB</h3>
+                  <span class="gia">9.190.000<sup>đ</sup></span><span class="giaphu">9.690.000<sup>đ</sup></span>
+                  <button class="addcart">Thêm vào giỏ hàng &nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div></a>
+                <a href="Productcard.html?sanpham=6"><div class="item">
+                  <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/r/e/real_me_pro_002.jpg" alt="Product 6">
+                  <h3>Realme 9 Pro 8GB 128GB</h3>
+                  <span class="gia">3.890.000<sup>đ</sup></span><span class="giaphu">4.390.000<sup>đ</sup></span>
+                  <button class="addcart">Thêm vào giỏ hàng &nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div></a>
+                <a href="Productcard.html?sanpham=7"><div class="item">
+                  <img src="https://cdn2.cellphones.com.vn/x358,webp,q100/media/catalog/product/4/_/4_36_3_2_1_9.jpg" alt="Product 7">
+                  <h3>Iphone 13 pro max 6GB 128GB</h3>
+                  <span class="gia">23.990.000<sup>đ</sup></span><span class="giaphu">24.990.000<sup>đ</sup></span>
+                  <button class="addcart">Thêm vào giỏ hàng &nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div></a>
+                <a href="Productcard.html?sanpham=8"><div class="item">
+                  <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/s/a/samsung_galaxy_z_fold_4-7.jpg" alt="Product 8">
+                  <h3>Samsung Galaxy Z Fold 4</h3>
+                  <span class="gia">35.990.000<sup>đ</sup></span><span class="giaphu">40.990.000<sup>đ</sup></span>
+                  <button class="addcart">Thêm vào giỏ hàng &nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div></a>
+                <a href="Productcard.html?sanpham=9"><div class="item">
+                  <img src="https://cdn2.cellphones.com.vn/x358,webp,q100/media/catalog/product/g/t/gtt7766.jpg" alt="Product 9">
+                  <h3>Xiaomi Redmi Note 12 Pro 5G</h3>
+                  <span class="gia">8.490.000<sup>đ</sup></span><span class="giaphu">8.990.000<sup>đ</sup></span>
+                  <button class="addcart">Thêm vào giỏ hàng &nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div></a>
+                <a href="Productcard.html?sanpham=10"><div class="item">
+                  <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/w/h/white-7e6a0f537b.png" alt="Product 10">
+                  <h3>REALME 10 8GB 256GB</h3>
+                  <span class="gia">6.390.000<sup>đ</sup></span><span class="giaphu">7.190.000<sup>đ</sup></span>
+                  <button class="addcart">Thêm vào giỏ hàng &nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div></a>
+                <a href="Productcard.html?sanpham=11"><div class="item">
+                  <img src="https://cdn2.cellphones.com.vn/x358,webp,q100/media/catalog/product/t/_/t_i_xu_ng_23__4_6.png" alt="Product 11">
+                  <h3>VIVO  V27E  8GB &nbsp; 256GB</h3>
+                  <span class="gia">8.190.000<sup>đ</sup></span><span class="giaphu">8.690.000<sup>đ</sup></span>
+                  <button class="addcart">Thêm vào giỏ hàng &nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div></a>
+                <a href="Productcard.html?sanpham=12"><div class="item">
+                  <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/c/9/c91ba5bf721d5b2d4eae4f821b8e4ced.png" alt="Product 12">
+                  <h3>VIVO V23E 8GB &nbsp; 256GB</h3>
+                  <span class="gia">5.490.000<sup>đ</sup></span><span class="giaphu">8.490.000<sup>đ</sup></span>
+                  <button class="addcart">Thêm vào giỏ hàng &nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div></a>
+                <a href="Productcard.html?sanpham=13"><div class="item">
+                  <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/o/p/oppo_reno8_pro_1_.jpg" alt="Product 13">
+                  <h3>OPPO Reno 8 Pro 5G 12GB 256GB</h3>
+                  <span class="gia">17.990.000<sup>đ</sup></span><span class="giaphu">18.990.000<sup>đ</sup></span>
+                  <button class="addcart">Thêm vào giỏ hàng &nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div></a>
+                <a href="Productcard.html?sanpham=14"><div class="item">
+                  <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/n/o/nokia-c21-plus-600x600_2.jpg" alt="Product 14">
+                  <h3>Nokia C21 Plus 3GB 32GB</h3>
+                  <span class="gia">1.950.000<sup>đ</sup></span><span class="giaphu">2.990.000<sup>đ</sup></span>
+                  <button class="addcart">Thêm vào giỏ hàng &nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div></a>
+                <a href="Productcard.html?sanpham=15"><div class="item">
+                  <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/i/p/iphone-14-storage-select-202209-6-1inch-y889.jpg" alt="Product 15">
+                  <h3>IPhone 14 6GB &nbsp 128GB </h3>
+                  <span class="gia">19.190.000<sup>đ</sup></span><span class="giaphu">22.990.000<sup>đ</sup></span>
+                  <button class="addcart">Thêm vào giỏ hàng &nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div></a>
+                <a href="Productcard.html?sanpham=16"><div class="item">
+                  <img src="https://cdn2.cellphones.com.vn/x358,webp,q100/media/catalog/product/n/2/n2_flip_-_combo_product_-_purple.png" alt="Product 16">
+                  <h3>OPPO Find N2 Flip 8GB 256GB</h3>
+                  <span class="gia">18.990.000<sup>đ</sup></span><span class="giaphu">19.990.000<sup>đ</sup></span>
+                  <button class="addcart">Thêm vào giỏ hàng &nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div></a>
+                <a href="Productcard.html?sanpham=17"><div class="item">
+                  <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/i/p/iphone-12-pro-max_3__9.jpg" alt="Product 17">
+                  <h3>IPhone 12 Pro Max 6GB 128GB </h3>
+                  <span class="gia">17.390.000<sup>đ</sup></span><span class="giaphu">18.390.000<sup>đ</sup></span>
+                  <button class="addcart">Thêm vào giỏ hàng &nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div></a>
+                <a href="Productcard.html?sanpham=18"><div class="item">
+                  <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/2/f/2fd21c69b0cae924821762ec8270b62e.png" alt="Product 18">
+                  <h3>VIVO Y22S 8GB 128GB</h3>
+                  <span class="gia">4.990.000<sup>đ</sup></span><span class="giaphu">5.990.000<sup>đ</sup></span>
+                  <button class="addcart">Thêm vào giỏ hàng &nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div></a>
+                <a href="Productcard.html?sanpham=19"><div class="item">
+                  <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/1/s/1sdcsc.jpg" alt="Product 19">
+                  <h3>REALME C33 3GB 32GB</h3>
+                  <span class="gia">2.420.000<sup>đ</sup></span><span class="giaphu">3.490.000<sup>đ</sup></span>
+                  <button class="addcart">Thêm vào giỏ hàng &nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div></a>
+                <a href="Productcard.html?sanpham=20"><div class="item">
+                  <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/n/o/nokia-g11-plus-blue_2.jpg" alt="Product 20">
+                  <h3>Nokia G11 Plus 3GB 32GB</h3>
+                  <span class="gia">2.090.000<sup>đ</sup></span><span class="giaphu">3.390.000<sup>đ</sup></span>
+                  <button class="addcart">Thêm vào giỏ hàng &nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div></a>
+                <a href="Productcard.html?sanpham=21"><div class="item">
+                  <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/s/a/samsung_galaxy_z_flip_m_i_2022-1_2.jpg" alt="Product 21">
+                  <h3>Samsung Galaxy Z Flip4 256GB</h3>
+                  <span class="gia">20.990.000<sup>đ</sup></span><span class="giaphu">25.990.000<sup>đ</sup></span>
+                  <button class="addcart">Thêm vào giỏ hàng &nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div></a>
+                <a href="Productcard.html?sanpham=22"><div class="item">
+                  <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/1/3/13_prooo.jpg" alt="Product 22">
+                  <h3>Xiaomi 13 Pro 12GB 256GB</h3>
+                  <span class="gia">23.490.000<sup>đ</sup></span><span class="giaphu">29.990.000<sup>đ</sup></span>
+                  <button class="addcart">Thêm vào giỏ hàng &nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div></a>
+                <a href="Productcard.html?sanpham=23"><div class="item">
+                  <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/1/1/11_3_12_2_1_6.jpg" alt="Product 23">
+                  <h3>IPhone 13 8 GB  &nbsp; 256GB</h3>
+                  <span class="gia">19.990.000<sup>đ</sup></span><span class="giaphu">21.990.000<sup>đ</sup></span>
+                  <button class="addcart">Thêm vào giỏ hàng &nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div></a>
+                <a href="Productcard.html?sanpham=24"><div class="item">
+                  <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/9/_/9_ro_plus.png" alt="Product 24">
+                  <h3>REALME 9 PRO PLUS 8 GB 128 GB</h3>
+                  <span class="gia">5.690.000<sup>đ</sup></span><span class="giaphu">9.990.000<sup>đ</sup></span>
+                  <button class="addcart">Thêm vào giỏ hàng &nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div></a>
+                <a href="Productcard.html?sanpham=25"><div class="item">
+                  <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/t/_/t_i_xu_ng_42__3.png" alt="Product 25">
+                  <h3>OPPO RENO 7 Pro 12 GB 256 GB</h3>
+                  <span class="gia">11.990.000<sup>đ</sup></span><span class="giaphu">18.990.000<sup>đ</sup></span>
+                  <button class="addcart">Thêm vào giỏ hàng &nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div></a>
+                <a href="Productcard.html?sanpham=26"><div class="item">
+                  <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/g/a/gallery-pc-img1_2.jpg" alt="Product 26">
+                  <h3>Vivo X80 Pro 12GB 256GB</h3>
+                  <span class="gia">15.990.000<sup>đ</sup></span><span class="giaphu">17.990.000<sup>đ</sup></span>
+                  <button class="addcart">Thêm vào giỏ hàng &nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div></a>
+                <a href="Productcard.html?sanpham=27"><div class="item">
+                  <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/f/v/fvssxa.jpg" alt="Product 27">
+                  <h3>Xiaomi POCO M5 4GB 64GB</h3>
+                  <span class="gia">3.300.000<sup>đ</sup></span><span class="giaphu">3.990.000<sup>đ</sup></span>
+                  <button class="addcart">Thêm vào giỏ hàng &nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div></a>
+                <a href="Productcard.html?sanpham=28"><div class="item">
+                  <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/1/_/1_250.jpg" alt="Product 28">
+                  <h3>Nokia C31 3GB RAM 32GB</h3>
+                  <span class="gia">2.150.000<sup>đ</sup></span><span class="giaphu">3.190.000<sup>đ</sup></span>
+                  <button class="addcart">Thêm vào giỏ hàng &nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div></a>
+                <a href="Productcard.html?sanpham=29"><div class="item">
+                  <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/s/a/samsung-galaxy-a34_3_.jpg" alt="Product 29">
+                  <h3>Samsung Galaxy A34 5G 8GB 128GB</h3>
+                  <span class="gia">7.790.000<sup>đ</sup></span><span class="giaphu">8.490.000<sup>đ</sup></span>
+                  <button class="addcart">Thêm vào giỏ hàng &nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div></a>
+                <a href="Productcard.html?sanpham=30"><div class="item">
+                  <img src="https://cdn2.cellphones.com.vn/x358,webp,q100/media/catalog/product/2/_/2_241_2.jpg" alt="Product 30">
+                  <h3>IPhone 12 4 GB  &nbsp; 128GB</h3>
+                  <span class="gia">15.990.000<sup>đ</sup></span><span class="giaphu">17.990.000<sup>đ</sup></span>
+                  <button class="addcart">Thêm vào giỏ hàng &nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div></a>
+                <a href="Productcard.html?sanpham=31"><div class="item">
+                  <img src="https://cdn.tgdd.vn/Products/Images/42/200533/iphone-11-pro-max-white-200-org.png" alt="Product 31">
+                  <h3>IPhone 11 Pro Max 4GB 64GB </h3>
+                  <span class="gia">11.590.000<sup>đ</sup></span><span class="giaphu">12.590.000<sup>đ</sup></span>
+                  <button class="addcart">Thêm vào giỏ hàng &nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div></a>
+                <a href="Productcard.html?sanpham=32"><div class="item">
+                  <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/l/b/lb-galaxy-m14-sm-m146-sm-m146bzbvmea-535834833.png" alt="Product 32">
+                  <h3>Samsung Galaxy M14 5G 4GB 128GB</h3>
+                  <span class="gia">4.250.000<sup>đ</sup></span><span class="giaphu">5.290.000<sup>đ</sup></span>
+                  <button class="addcart">Thêm vào giỏ hàng &nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div></a>
+                <a href="Productcard.html?sanpham=33"><div class="item">
+                  <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/x/i/xiaomi-11-lite-5g-014_1.jpg" alt="Product 33">
+                  <h3>Xiaomi 11 Lite 5G NE 8 GB 128 GB</h3>
+                  <span class="gia">6.790.000<sup>đ</sup></span><span class="giaphu">9.490.000<sup>đ</sup></span>
+                  <button class="addcart">Thêm vào giỏ hàng &nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div></a>
+                <a href="Productcard.html?sanpham=34"><div class="item">
+                  <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/t/_/t_i_xu_ng_59_.png" alt="Product 34">
+                  <h3>Vivo T1 5G 8GB 128 GB</h3>
+                  <span class="gia">7.990.000<sup>đ</sup></span><span class="giaphu">9.990.000<sup>đ</sup></span>
+                  <button class="addcart">Thêm vào giỏ hàng &nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div></a>
+                <a href="Productcard.html?sanpham=35"><div class="item">
+                  <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/t/h/thumb_602966_default_big.jpg" alt="Product 35">
+                  <h3>Nokia G21 4GB 4G 128GB</h3>
+                  <span class="gia">4.290.000<sup>đ</sup></span><span class="giaphu">5.290.000<sup>đ</sup></span>
+                  <button class="addcart">Thêm vào giỏ hàng &nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div></a>
+                <a href="Productcard.html?sanpham=36"><div class="item">
+                  <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/1/1/11-pro-plus-blue.jpg" alt="Product 36">
+                  <h3>Xiaomi Redmi Note 11 Pro Plus 5G</h3>
+                  <span class="gia">8.390.000<sup>đ</sup></span><span class="giaphu">9.990.000<sup>đ</sup></span>
+                  <button class="addcart">Thêm vào giỏ hàng &nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div></a>
+                <a href="Productcard.html?sanpham=37"><div class="item">
+                  <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/r/e/reno6-1_1.jpg" alt="Product 37">
+                  <h3>OPPO Reno 6 5G 8GB 128 GB</h3>
+                  <span class="gia">7.999.000<sup>đ</sup></span><span class="giaphu">8.999.000<sup>đ</sup></span>
+                  <button class="addcart">Thêm vào giỏ hàng &nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div></a>
+                <a href="Productcard.html?sanpham=38"><div class="item">
+                  <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/2/_/2_282.jpg" alt="Product 38">
+                  <h3>VIVO Y35 8GB 128 GB</h3>
+                  <span class="gia">5.790.000<sup>đ</sup></span><span class="giaphu">6.990.000<sup>đ</sup></span>
+                  <button class="addcart">Thêm vào giỏ hàng &nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div></a>
+                <a href="Productcard.html?sanpham=39"><div class="item">
+                  <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/r/g/rgrgrtyt6_1.jpg" alt="Product 39">
+                  <h3>REALME C55 8GB 256GB</h3>
+                  <span class="gia">5.190.000<sup>đ</sup></span><span class="giaphu">5.990.000<sup>đ</sup></span>
+                  <button class="addcart">Thêm vào giỏ hàng &nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div></a>
+                <a href="Productcard.html?sanpham=40"><div class="item">
+                  <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/s/a/samsung-galaxy-20-fe_4_.jpg" alt="Product 40">
+                  <h3>Samsung Galaxy S20 FE 8 GB 256GB</h3>
+                  <span class="gia">7.490.000<sup>đ</sup></span><span class="giaphu">12.490.000<sup>đ</sup></span>
+                  <button class="addcart">Thêm vào giỏ hàng &nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div></a>
+                <a href="Productcard.html?sanpham=41"><div class="item">
+                  <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/1/_/1_359_1.png" alt="Product 41">
+                  <h3>IPhone SE 2022 | Chính hãng VN/A</h3>
+                  <span class="gia">9.990.000<sup>đ</sup></span><span class="giaphu">12.990.000<sup>đ</sup></span>
+                  <button class="addcart">Thêm vào giỏ hàng &nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div></a>
+                <a href="Productcard.html?sanpham=42"><div class="item">
+                  <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/c/o/combo_product_-_black_-_reno7_4g.png" alt="Product 42">
+                  <h3>OPPO RENO 7 4G (8GB - 128GB)</h3>
+                  <span class="gia">6.350.000<sup>đ</sup></span><span class="giaphu">7.990.000<sup>đ</sup></span>
+                  <button class="addcart">Thêm vào giỏ hàng &nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div></a>
+                <a href="Productcard.html?sanpham=43"><div class="item">
+                  <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/d/7/d78000_6__2.jpg" alt="Product 43">
+                  <h3>Xiaomi POCO X5 Pro 8GB 256GB</h3>
+                  <span class="gia">7.390.000<sup>đ</sup></span><span class="giaphu">8.690.000<sup>đ</sup></span>
+                  <button class="addcart">Thêm vào giỏ hàng &nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div></a>
+                <a href="Productcard.html?sanpham=44"><div class="item">
+                  <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/t/1/t1x_01_2.png" alt="Product 44">
+                  <h3>VIVO T1X 8GB 128GB</h3>
+                  <span class="gia">4.990.000<sup>đ</sup></span><span class="giaphu">5.990.000<sup>đ</sup></span>
+                  <button class="addcart">Thêm vào giỏ hàng &nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div></a>
+                <a href="Productcard.html?sanpham=45"><div class="item">
+                  <img src="https://cdn.tgdd.vn/Products/Images/42/191482/iphone-xs-max-512gb-gold-200-org.png" alt="Product 45">
+                  <h3> IPhone XS Max 8GB 512GB </h3>
+                  <span class="gia">12.500.000<sup>đ</sup></span><span class="giaphu">10.500.000<sup>đ</sup></span>
+                  <button class="addcart">Thêm vào giỏ hàng &nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div></a>
+              </div>
+              <div id="mycart" class="cart">
+                <div class="name">GIỎ HÀNG CỦA BẠN <i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
+                <a href="#" class="closebtn" onclick="closecart()">&times;</a>
+              <section style="margin-top: 5%;">
+                  <table>
+                    <thead>
+                    <tr>
+                      <th class="SP">Sản phẩm</th>
+                      <th>Giá</th>
+                      <th>SL</th>
+                      <th>Chọn</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                  
+                    </tbody>
+                  </table>
+                  <div style="text-align: right;" class="price-total">
+                    <p style="font-weight: bold;">Tổng tiền:<span>0</span></p>
+                  </div>
+                
+              </section>
+              </div>
+            <ul class="listPage">
+            </ul>
+</body>
+<script src="PHONEWORLD.js"></script>
+</html>
